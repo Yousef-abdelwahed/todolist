@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -16,7 +16,8 @@
     </head>
     <section class="container d-flex  justify-content-center align-items-center">
         <form id="form">
-        
+            <label for="Name"><b>Name</b></label>
+            <input type="text" placeholder="Enter user name" name="userName" id="userName"class="form-control my-2"   required>   
     <label for="email"><b>Email</b></label>
     <input type="text" placeholder="Enter Email" name="email" id="email"class="form-control my-2"   required>
 
@@ -25,13 +26,38 @@
     <hr>
     <button type="submit" id="login" class="login btn btn-success px-5 mx-5 ">login</button>
   </div>
-  
-  <div class="container signin my-3">
-    <p>New to Todolist? <a href="./signup.html"> Sign up</a>.</p>
   </div>
+
+  <hr>
     </section>
 </form>
-      
+      <div id="listUer"></div>
+        <div >
+            <hr>
+            <label for="Search">search by user neame</label>
+            <input onkeyup="searchUser(this.value)" type="text" placeholder="Search" name="SearchUser" id="searchUser"class="form-control my-2">
+            <div>
+                <div id="Task" class="">
+                    <input type="text" id="getTask" placeholder="add Task" class="" >
+                    <button id="taskBtn" onclick="btnList()" class="btn btn-warning  ">add</button>
+                    <div id=""  >
+                        <table class="table table-striped">
+                            <thead>
+                                <th>Tasks</th>
+                                <th>delet</th>
+                            </thead>
+                            <hr>
+                            <tbody  id="setTask">                         
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+     
+      <div>
+      </div>
+
   <script src="./js_file/main.js"></script>
 </body>   
 </html>
