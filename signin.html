@@ -21,8 +21,8 @@
     <label for="email"><b>Email</b></label>
     <input type="text" placeholder="Enter Email" name="email" id="email"class="form-control my-2"   required>
 
-    <label for="psw"><b>Password</b></label>
-    <input type="password" placeholder="Enter Password" name="psw" id="psw"class="form-control my-2"   required>
+    <label for="password"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" id="password"class="form-control my-2"   required>
     <hr>
     <button type="submit" id="login" class="login btn btn-success px-5 mx-5 ">login</button>
   </div>
@@ -37,11 +37,11 @@
             <label for="Search">search by user neame</label>
             <input onkeyup="searchUser(this.value)" type="text" placeholder="Search" name="SearchUser" id="searchUser"class="form-control my-2">
             <div> -->
-                <div id="Task" class="">
+                <div id="task" class="" style="display: none;">
                     <input type="text" id="getTask" placeholder="add Task" class="" >
                     <button id="taskBtn" onclick="btnList()" class="btn btn-warning  ">add</button>
                     <div id=""  >
-                        <table class="table table-striped">
+                        <table class="table table-striped" >
                             <thead>
                                 <th>Tasks</th>
                                 <th>delet</th>
